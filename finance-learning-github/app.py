@@ -3,10 +3,16 @@
 Lancer avec :  streamlit run app.py
 Chaque page vit dans son propre fichier (accueil.py et le dossier vues/).
 """
+from pathlib import Path
+
 import streamlit as st
 
-st.set_page_config(page_title="Finance Learning", page_icon="assets/logo_icon.svg", layout="wide")
-st.logo("assets/logo.svg", icon_image="assets/logo_icon.svg")
+# Chemins calculés à partir de ce fichier : l'app marche même lancée depuis un autre dossier
+# (par exemple en ligne, quand le projet est dans un sous-dossier du dépôt GitHub).
+ASSETS = Path(__file__).parent / "assets"
+
+st.set_page_config(page_title="Finance Learning", page_icon=str(ASSETS / "logo_icon.svg"), layout="wide")
+st.logo(str(ASSETS / "logo.svg"), icon_image=str(ASSETS / "logo_icon.svg"))
 
 PAGES = {
     "": [st.Page("accueil.py", title="Accueil", icon="🏠", default=True)],
