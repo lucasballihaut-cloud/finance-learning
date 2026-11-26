@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" width="240" height="48">
+  <rect x="2" y="4" width="40" height="40" rx="9" fill="#1f4e79"/>
+  <polyline points="9,34 18,24 25,29 35,14" fill="none" stroke="#f2c14e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="52" y="31" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1f4e79">Finance Learning</text>
+</svg>
